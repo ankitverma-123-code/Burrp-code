@@ -1,53 +1,7 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-
-
-.App-header {
-  background-color: #4373d3;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  /* align-items: center; */
-  /* //justify-content: center; */
-  font-size: calc(10px + 2vmin);
-  color: white;
-  background-image: url("https://www.technocrazed.com/wp-content/uploads/2015/12/beautiful-wallpaper-download-14.jpg");
-    background-size:contain;
-    background-position:top;
-    background: cover;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-
-.footer{
-  padding-top: 0px;
-  background-color: #3b399bd7;
-}
-.para{
-  padding-top: 10px;
-  margin-top: 0px;
-}
-.text{
-  margin-bottom: 0px;
-  padding-bottom: 20px;
-}
-.bodyText{
-  padding-left: 100px;
-  padding-right: 100px;
-  text-align: left;
-  text-shadow: 0ch;
-  /* color: black; */
-}
-.head{
-  color: black;
+.logo{
+  height: 10vh;
+  width: 10vh;
 }
