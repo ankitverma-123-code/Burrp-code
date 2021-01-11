@@ -4,6 +4,7 @@ import cartlogo from "./cartlogo.png";
 import searchlogo from "./searchlogo.png";
 import profilelogo from "./profilelogo.png";
 import cartsign from "./images/cartimg.png";
+import imgforcart from "./images/sbarro.png";
 import "./Header.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
                                                 
@@ -52,13 +53,15 @@ function Header() {
        <div className="body-container p-3 mx-4 mt-2">
          <div className="row ">
            <div className="col-8 m-2">
-             <div className="cart d-flex flex-row justify-content-start">
+
+             <div className="cart">
              <Image  src={cartsign} fluid />
              <p className="p-auto">Your order items </p>
              </div>
 
-              <div className="m-auto">
-                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div className="inner-card">
+                   <Image src={imgforcart} fluid/>
+                  <a class="btn dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Dropdown link
                   </a>
 
@@ -68,27 +71,31 @@ function Header() {
                     <a className="dropdown-item" href="#">Something else here</a>
                   </div>
               </div>
-              <div>
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
 
-              <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <a className="dropdown-item" href="#">Something else here</a>
-              </div>
-              </div>
-              <div>
-              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown link
-              </a>
+              <div className="inner-card">
+              <Image src={imgforcart} fluid/>
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
 
-              <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <a className="dropdown-item" href="#">Something else here</a>
+                <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a className="dropdown-item" href="#">Action</a>
+                  <a className="dropdown-item" href="#">Another action</a>
+                  <a className="dropdown-item" href="#">Something else here</a>
+                </div>
               </div>
+
+              <div className="inner-card">
+               <Image src={imgforcart} fluid/>
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Dropdown link
+                </a>
+
+                <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a className="dropdown-item" href="#">Action</a>
+                  <a className="dropdown-item" href="#">Another action</a>
+                  <a className="dropdown-item" href="#">Something else here</a>
+                </div>
               </div>
            
          

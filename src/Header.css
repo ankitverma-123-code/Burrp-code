@@ -30,7 +30,19 @@
   box-sizing: border-box;
   border-radius: 8px;
 }
+.p-auto{
+  padding-left:20px ;
+  padding-top: 5px;
+}
 .cart{
  display: flex;
- justify-content: center; 
+ align-items: center; 
+}
+.inner-card{
+  margin: 20px;
+  background-color: #FFFFFF;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-radius: 10px;
 }
