@@ -3,10 +3,12 @@ import logo from "./logo.png";
 import cartlogo from "./cartlogo.png";
 import searchlogo from "./searchlogo.png";
 import profilelogo from "./profilelogo.png";
+import cartsign from "./images/cartimg.png";
 import "./Header.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+                                                
 import { Link } from "react-router-dom";
-import {Navbar,NavDropdown,Nav,Form ,FormControl,Button} from 'react-bootstrap';
+import {Navbar,NavDropdown,Nav,Form ,Image,FormControl,Button,Dropdown} from 'react-bootstrap';
 //d-flex flex-row justify-content-center
 
 function Header() { 
@@ -44,35 +46,58 @@ function Header() {
                 
             </Navbar.Collapse>
             </div>
-            </Navbar>
+      </Navbar>
         </div>
-       <div className="bg-container ">
-        <div >
-        
-            <div className="Bottom-container">
-          <h1 className="blogpost">
-             BlogPost 
-          </h1>
-         <div className="content-img">
 
-          {/* <h1 className="img-heading">Food And Work</h1> */}
-        </div>
-        
-        <div className="post d-flex flex-column justify-content-center">
-          <p className="blog-para"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop 
-          publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-          Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-          when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-          It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-          essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing
-          Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker 
-          including versions of Lorem Ipsum. </p>{" "}
-        </div>{" "}
-            </div>
+       <div className="body-container p-3 mx-4 mt-2">
+         <div className="row ">
+           <div className="col-8 m-2">
+             <div className="cart d-flex flex-row justify-content-start">
+             <Image  src={cartsign} fluid />
+             <p className="p-auto">Your order items </p>
+             </div>
+
+              <div className="m-auto">
+                  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown link
+                  </a>
+
+                  <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a className="dropdown-item" href="#">Action</a>
+                    <a className="dropdown-item" href="#">Another action</a>
+                    <a className="dropdown-item" href="#">Something else here</a>
+                  </div>
+              </div>
+              <div>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+
+              <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a className="dropdown-item" href="#">Action</a>
+                <a className="dropdown-item" href="#">Another action</a>
+                <a className="dropdown-item" href="#">Something else here</a>
+              </div>
+              </div>
+              <div>
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Dropdown link
+              </a>
+
+              <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a className="dropdown-item" href="#">Action</a>
+                <a className="dropdown-item" href="#">Another action</a>
+                <a className="dropdown-item" href="#">Something else here</a>
+              </div>
+              </div>
+           
          
-    </div>{" "}
-  </div>
+
+         </div>
+        </div>  
+       </div>
+       
+  
 </div>
 );
 }

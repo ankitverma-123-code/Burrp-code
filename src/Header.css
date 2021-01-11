@@ -6,128 +6,12 @@
 
 .header {
    
-    background-color: #f3f3f3;
+    background-color: #E5E5E5;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-/* @media (min-width: 992px){
-    .header{
-        width: 50%;
-    }
-} */
-.bg-container{
-    align-items: center;
-}
-
-.logo {
-    margin-left: 43px;
-    width: 88px;
-    height: 88px;
-    float: left;
-    align-content: left;
-}
-
-.address {
-
-    width: 69px;
-    height: 14px;
 
 
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 14px;
-    /* identical to box height */
-
-    text-align: center;
-
-    color: #000000;
-    margin: auto;
-}
-.blogpost{
-    /* display: flex;
-    align-content: center; */
-    text-align: center;
-    font-size: 30px;
-}
-
-.search_icon {
-    margin: auto;
-}
-
-.add-inp {
-    display: flex;
-    align-items: center;
-    padding-left: 15%;
-}
-
-.btn-header {
-    background-color: #FF5454;
-}
-
-.searching-bar {
-
-    display: flex;
-    align-items: center;
-    flex: 1;
-}
-
-.end-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    text-decoration: none;
-}
-
-.cart-bar {
-    padding-left: 10%;
-}
-
-.cart-bar {
-    padding-left: 10%;
-}
-
-.login-bar {
-    padding-left: 20%;
-    width: auto;
-}
-
-.blogpost1 {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-}
-.cart-items{
-padding: 20px;
-display: flex;
-    align-items: center;
-}
-.blog-para{
-    padding: 50px;
-    border-width: 2px;
-}
-.content-img{
-    background-image: url("Rectangle.png");
-    height: 35vh;
-    background-size: cover;
-    border-radius: 10px;
-}
-.img-heading{
-   font-family: Roboto;
-   padding-left: 20%;
-   padding-bottom: 0px;
-}
-.Bottom-container{
-    margin-top: 50px;
-  background-color:#f3f3f3;
-  height: fit-content;
-  padding: 20px;
-  border-radius: 20px;
-}
-/*----------------------New CSS-------------------------------*/
 .navbarImages{
     height: 1rem;
     width: 1rem;
@@ -139,3 +23,14 @@ display: flex;
   .NavDropdown{
     color: black;
   }
+.body-container{
+  background-color: #f3f3f3 ;
+  background: #F9F9F9;
+  border: 2px solid #EB5151;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.cart{
+ display: flex;
+ justify-content: center; 
+}
