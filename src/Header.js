@@ -80,12 +80,12 @@ function Header() {
                 <Nav.Link className="Navlinks" href="#home"><img alt="cart Logo" src={profilelogo} className="navbarImages"></img>Log in/sign up</Nav.Link>
                 
                 
-            </Navbar.Collapse>
+            </Navbar.Collapse> 
             </div>
       </Navbar>
         </div>
 
-      <div className="body-container p-3 mx-4 mt-2">
+      <div className="body-container p-3 mx-lg-4 mt-2 mx-sm-1">
         <div className="row ">
           <div className="col-12 col-lg-8">
 
