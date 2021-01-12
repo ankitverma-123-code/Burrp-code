@@ -5,6 +5,13 @@ import searchlogo from "./searchlogo.png";
 import profilelogo from "./profilelogo.png";
 import cartsign from "./images/cartimg.png";
 import imgforcart from "./images/sbarro.png";
+import plus from "./images/plus.png";
+import minus from "./images/minus.png";
+import paytm from "./images/paytm.png";
+import paypal from "./images/paypal.png";
+import payu from "./images/payu.png";
+import razorpay from "./images/razorpay.png";
+
 import "./Header.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
                                                 
@@ -20,7 +27,7 @@ function Header() {
       <Navbar style={{padding:"0rem 1rem"}} expand="lg">
             <Navbar.Brand href="#home"><img alt="BURPP" src={logo}></img></Navbar.Brand>
    
-            <div className="ml-0">
+            <div className="ml-0"> 
                 <Nav className="ml-xl-auto ml-lg-auto ml-md-0 ml-sm-0">
                 <NavDropdown className="NavDropdown " title="Mumbai,MH" id="basic-nav-dropdown">
                     <NavDropdown.Item href="#action/3.1" >Action</NavDropdown.Item>
@@ -50,57 +57,73 @@ function Header() {
       </Navbar>
         </div>
 
-       <div className="body-container p-3 mx-4 mt-2">
-         <div className="row ">
-           <div className="col-8 m-2">
+      <div className="body-container p-3 mx-4 mt-2">
+        <div className="row ">
+          <div className="col-12 col-lg-8">
 
              <div className="cart">
              <Image  src={cartsign} fluid />
-             <p className="p-auto">Your order items </p>
+             <p className="cart-text">Your order items </p>
              </div>
 
-              <div className="inner-card">
-                   <Image src={imgforcart} fluid/>
-                  <a class="btn dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Dropdown link
-                  </a>
+             <div className="d-flex flex-row ">
+                <div> <Image src={imgforcart} fluid/></div>
+                <div className="inner-card">
+                    
+                    <a class="btn dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown link
+                    </a>
 
-                  <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Another action</a>
-                    <a className="dropdown-item" href="#">Something else here</a>
-                  </div>
-              </div>
-
-              <div className="inner-card">
-              <Image src={imgforcart} fluid/>
-                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown link
-                </a>
-
-                <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a className="dropdown-item" href="#">Action</a>
-                  <a className="dropdown-item" href="#">Another action</a>
-                  <a className="dropdown-item" href="#">Something else here</a>
+                    <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a className="dropdown-item" href="#">Action</a>
+                      <a className="dropdown-item" href="#">Another action</a>
+                      <a className="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <div className="d-flex flex-row">
+                  <p>Units</p>
+                  <img className="unit-image" src={plus} alt="error"/>
+                  <img  classname="unit-image" src={minus} alt="error" />
                 </div>
               </div>
-
-              <div className="inner-card">
-               <Image src={imgforcart} fluid/>
-                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown link
-                </a>
-
-                <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                  <a className="dropdown-item" href="#">Action</a>
-                  <a className="dropdown-item" href="#">Another action</a>
-                  <a className="dropdown-item" href="#">Something else here</a>
-                </div>
-              </div>
-           
-         
 
          </div>
+
+            <div className=" col-12 col-lg-4">
+                        <a class="btn dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          payments method
+                        </a>
+
+                        <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a className="dropdown-item" href="#">Action</a>
+                          <a className="dropdown-item" href="#">Another action</a>
+                          <a className="dropdown-item" href="#">Something else here</a>
+                        </div>
+
+                        <div className="payment-gateway">
+                          <p>Payment-Gateway</p>
+                          
+                        </div>
+                        <div className="payment-gateway">
+                          <Image src={paytm} fluid/>
+                        </div>
+                        <div className="payment-gateway">
+                          <Link>
+                            <Image src={paypal} fluid/>
+                          </Link>
+                        </div>
+                        <div className="payment-gateway">
+                          <Image src={payu} fluid/>
+                        </div>
+                        <div className="payment-gateway">
+                          <Image src={razorpay} fluid/>
+                        </div>
+
+                        <button type="button" class="btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
+                          continue
+                        </button>
+            </div>
+
         </div>  
        </div>
        

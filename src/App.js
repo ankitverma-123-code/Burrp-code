@@ -18,9 +18,6 @@ function App(){
           <Route path="/">
             <Header/>
           </Route>
-          <Route path="/login">
-            <h1>Log in page</h1>
-          </Route>
         </switch>
       </div> 
     </Router>
