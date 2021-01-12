@@ -1,12 +1,12 @@
-import React from "react";
+import {React,useState} from "react";
 import logo from "./logo.png";
 import cartlogo from "./cartlogo.png";
 import searchlogo from "./searchlogo.png";
 import profilelogo from "./profilelogo.png";
 import cartsign from "./images/cartimg.png";
 import imgforcart from "./images/sbarro.png";
-import plus from "./images/plus.png";
-import minus from "./images/minus.png";
+// import plus from "./images/plus.png";
+// import minus from "./images/minus.png";
 import paytm from "./images/paytm.png";
 import paypal from "./images/paypal.png";
 import payu from "./images/payu.png";
@@ -16,8 +16,36 @@ import "./Header.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
                                                 
 import { Link } from "react-router-dom";
-import {Navbar,NavDropdown,Nav,Form ,Image,FormControl,Button,Dropdown} from 'react-bootstrap';
+import {Navbar,NavDropdown,Nav,Form ,Image,FormControl,Button,Collapse,Dropdown} from 'react-bootstrap';
 //d-flex flex-row justify-content-center
+
+function VEGBOX() {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <>
+    <p
+    
+    aria-controls="example-collapse-text"
+    aria-expanded={open}
+    onClick={() => setOpen(!open)}
+     >
+     VEGBOX
+     <i class="fa fa-angle-down fa-lg"></i>
+     </p> 
+      
+      <Collapse in={open}>
+        <div id="example-collapse-text">
+          <p>1.Roti</p>
+          <p>2.Chicken</p>
+          <p>3.aalo</p>
+          <p>4.ad</p>
+        </div>
+      </Collapse>
+    </>
+  );
+}
+
 
 function Header() { 
   return (
@@ -66,31 +94,64 @@ function Header() {
              <p className="cart-text">Your order items </p>
              </div>
 
-             <div className="d-flex flex-row ">
-                <div> <Image src={imgforcart} fluid/></div>
-                <div className="inner-card">
-                    
-                    <a class="btn dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown link
-                    </a>
-
-                    <div className="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                      <a className="dropdown-item" href="#">Action</a>
-                      <a className="dropdown-item" href="#">Another action</a>
-                      <a className="dropdown-item" href="#">Something else here</a>
-                    </div>
-                </div>
-                <div className="d-flex flex-row">
-                  <p>Units</p>
-                  <img className="unit-image" src={plus} alt="error"/>
-                  <img  classname="unit-image" src={minus} alt="error" />
-                </div>
+              <div className="content_div mt-2 d-flex flex-row ">
+                  <div>
+                  <Image  src={imgforcart} fluid />
+                  </div>
+                  <div className="mt-auto ml-auto">
+                     <VEGBOX/>
+                  </div>
+                  <div className="d-flex flex-row mt-auto ml-auto ">
+                    <p >Units:2</p>
+                    <i class="m-1 fa fa-plus-circle"></i>
+                    <i class="m-1 fa fa-minus-circle"></i>
+                  </div>
+                  <div className="mt-auto ml-auto">
+                    <p>400Rs.</p>
+                  </div>
+                 
               </div>
+              <div className="content_div mt-2 d-flex flex-row ">
+                  <div>
+                  <Image  src={imgforcart} fluid />
+                  </div>
+                  <div className="mt-auto ml-auto">
+                    <VEGBOX/>
+                  </div>
+                  <div className="d-flex flex-row mt-auto ml-auto ">
+                    <p >Units:2</p>
+                    <i class="m-1 fa fa-plus-circle"></i>
+                    <i class="m-1 fa fa-minus-circle"></i>
+                  </div>
+                  <div className="mt-auto ml-auto">
+                    <p>400Rs.</p>
+                  </div>
+                 
+              </div>
+              <div className="content_div mt-2 d-flex flex-row ">
+                  <div>
+                  <Image  src={imgforcart} fluid />
+                  </div>
+                  <div className="mt-auto ml-auto">
+                    <VEGBOX/>
+                  </div>
+                  <div className="d-flex flex-row mt-auto ml-auto ">
+                    <p >Units:2</p>
+                    <i class="m-1 fa fa-plus-circle"></i>
+                    <i class="m-1 fa fa-minus-circle"></i>
+                  </div>
+                  <div className="mt-auto ml-auto">
+                    <p>400Rs.</p>
+                  </div>
+                 
+              </div>
+
 
          </div>
 
-            <div className=" col-12 col-lg-4">
-                        <a class="btn dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <div className="col-12 col-lg-4">
+                     <div className="payment-dropdown ">
+                        <a class="dropdown-btn text-decoration-none dropdown-toggle" href="#" role="link" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           payments method
                         </a>
 
@@ -99,30 +160,40 @@ function Header() {
                           <a className="dropdown-item" href="#">Another action</a>
                           <a className="dropdown-item" href="#">Something else here</a>
                         </div>
+                      </div>  
 
                         <div className="payment-gateway">
                           <p>Payment-Gateway</p>
-                          
                         </div>
                         <div className="payment-gateway">
-                          <Image src={paytm} fluid/>
+                          <Link to="/">
+                           <Image src={paytm} fluid/>
+                          </Link> 
                         </div>
                         <div className="payment-gateway">
-                          <Link>
+                          <Link to="/">
                             <Image src={paypal} fluid/>
                           </Link>
                         </div>
                         <div className="payment-gateway">
-                          <Image src={payu} fluid/>
+                          <Link to="/">
+                           <Image src={payu} fluid/>
+                          </Link>
                         </div>
                         <div className="payment-gateway">
+                         <Link to="/">
                           <Image src={razorpay} fluid/>
+                         </Link>
+                         
                         </div>
-
+                      <div className="payment-down-btn">
                         <button type="button" class="btn2" data-toggle="button" aria-pressed="false" autocomplete="off">
                           continue
                         </button>
-            </div>
+                       </div> 
+
+                
+          </div>
 
         </div>  
        </div>
