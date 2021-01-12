@@ -98,15 +98,15 @@ function Header() {
                   <div>
                   <Image  src={imgforcart} fluid />
                   </div>
-                  <div className="mt-auto ml-auto">
+                  <div className="mt-3 ml-auto">
                      <VEGBOX/>
                   </div>
-                  <div className="d-flex flex-row mt-auto ml-auto ">
+                  <div className="d-flex flex-row mt-3 ml-auto ">
                     <p >Units:2</p>
                     <i class="m-1 fa fa-plus-circle"></i>
                     <i class="m-1 fa fa-minus-circle"></i>
                   </div>
-                  <div className="mt-auto ml-auto">
+                  <div className="mt-3 ml-auto">
                     <p>400Rs.</p>
                   </div>
                  
@@ -115,15 +115,15 @@ function Header() {
                   <div>
                   <Image  src={imgforcart} fluid />
                   </div>
-                  <div className="mt-auto ml-auto">
-                    <VEGBOX/>
+                  <div className="mt-3 ml-auto">
+                     <VEGBOX/>
                   </div>
-                  <div className="d-flex flex-row mt-auto ml-auto ">
+                  <div className="d-flex flex-row mt-3 ml-auto ">
                     <p >Units:2</p>
                     <i class="m-1 fa fa-plus-circle"></i>
                     <i class="m-1 fa fa-minus-circle"></i>
                   </div>
-                  <div className="mt-auto ml-auto">
+                  <div className="mt-3 ml-auto">
                     <p>400Rs.</p>
                   </div>
                  
@@ -132,15 +132,15 @@ function Header() {
                   <div>
                   <Image  src={imgforcart} fluid />
                   </div>
-                  <div className="mt-auto ml-auto">
-                    <VEGBOX/>
+                  <div className="mt-3 ml-auto">
+                     <VEGBOX/>
                   </div>
-                  <div className="d-flex flex-row mt-auto ml-auto ">
+                  <div className="d-flex flex-row mt-3 ml-auto ">
                     <p >Units:2</p>
                     <i class="m-1 fa fa-plus-circle"></i>
                     <i class="m-1 fa fa-minus-circle"></i>
                   </div>
-                  <div className="mt-auto ml-auto">
+                  <div className="mt-3 ml-auto">
                     <p>400Rs.</p>
                   </div>
                  
